@@ -1,6 +1,6 @@
+/*Prodcut section container*/
 .product-section-container{
     width: 100%;
-    background-color: grey;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,8 +11,113 @@
     font-size: 3rem;
 }
 
+/*Product list. This will be container of the filter and the list of items*/
 .product-list-container{
+    display: flex;
+    flex-direction: row;
     width: 1536px;
+}
+
+/*Product filter container*/
+.product-filter{
+    width: 10%;
+    margin: 0px;
+    padding: 0px;
+    margin-right: 1rem;
+}
+
+.product-filter h4{
+    margin: 0px;
+    font-size: 1.5rem;
+}
+
+.product-filter-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+.filter-btn-icon{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.filter-btn-icon a{
+    text-decoration: none;
+    color: black;
+}
+/*Prodcut list container, it will be container of the grid with item cards*/
+.product-list{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+
+/*Prodoct, item cards container*/
+.product-card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.product-card-img{
+    width: 100%;
     height: 20rem;
-    background-color: aqua;
+    background-image: url(../../../../assets/images/testremera1.png);
+   /*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 3%;
+}
+
+.product-card h4{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+.product-card-description{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-card-description p{
+    margin-top: .5rem;
+}
+
+.product-card-size-color{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.product-card-price{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: .5rem;
+}
+
+.product-card-shop-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 60%;
+    background-color: black;
+}
+
+.product-card-shop-btn a{
+    color: white;
+    text-decoration: none;
 }

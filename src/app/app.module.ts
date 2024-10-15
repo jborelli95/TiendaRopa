@@ -8,6 +8,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HeroComponent } from './components/home/hero/hero.component';
 import { ProductSectionComponent } from './components/products/product-section/product-section.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
+import { ProductViewComponent } from './views/navegation/product-view/product-view.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FooterComponent } from './components/shared/footer/footer.component';
     NavbarComponent,
     HeroComponent,
     ProductSectionComponent,
-    FooterComponent
+    FooterComponent,
+    ProductViewComponent
   ],
   imports: [
     BrowserModule,
