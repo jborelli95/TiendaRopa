@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class ProductSectionComponent {
 
+  change(id:string){
+    console.log(document.getElementById(id));
+    console.log("id es:" +id);
+  }
 }
+/**https://stackoverflow.com/questions/65887254/how-to-change-a-value-in-css-using-typescript */
