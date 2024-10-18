@@ -28,11 +28,14 @@
 
 .product-filter h4{
     margin: 0px;
-    font-size: 1.8rem;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
 }
 
 .product-filter-btn{
     display: flex;
+    align-items: center;
     flex-direction: row;
     justify-content: space-between;
     font-size: 1.5rem;
@@ -41,6 +44,11 @@
 .filter-btn-icon{
     height: 1.5rem;
     width: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
 }
 
 .filter-btn-icon a{
@@ -64,9 +72,10 @@
     color: black;
 }
 
+/*
 .product-filter-property{
-    
-}
+
+}*/
 
 .product-filter-property input{
     margin-left: 0px;
@@ -76,6 +85,7 @@
 
 .product-filter-property label{
     font-size: 1.2rem;
+    margin-left: .5rem;
 }
 
 /*Prodcut list container, it will be container of the grid with item cards*/

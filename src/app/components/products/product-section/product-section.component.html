@@ -5,14 +5,18 @@
             <h4>Filtros:</h4>
             <div class="product-filter-btn">
                 <span>Genero:</span>
-                <span class="filter-btn-icon">
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                            <path fill="currentColor"
-                                d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
-                        </svg>
-                    </a>
+                <span class="filter-btn-icon" (click)="change('genre')">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="genre-down-btn"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="currentColor"
+                            d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                    </svg>
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" id="genre-up-btn" style="display: none;"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+                    </svg>
                 </span>
             </div>
             <div class="product-filter-select-list" id="genre">
@@ -27,79 +31,135 @@
             </div>
             <hr>
             <div class="product-filter-btn">
-                <span>Marca:</span>
-                <span class="filter-btn-icon" (click)="change('brand')">
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                            <path fill="currentColor"
-                                d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
-                        </svg>
+                <span>Indumentaria:</span>
+                <span class="filter-btn-icon" (click)="change('clothing')">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="clothing-down-btn"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="currentColor"
+                            d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" id="clothing-up-btn" style="display: none;"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+                    </svg>
                 </span>
             </div>
-            <div class="product-filter-select-list" id="brand">
+            <div class="product-filter-select-list" id="clothing">
                 <span class="product-filter-property">
-                    <input type="checkbox" id="adidas" name="brand" value="adidas">
-                    <label for="adidas">Adidas</label>
+                    <input type="checkbox" id="remeras" name="clothing" value="remeras">
+                    <label for="remeras">Remeras</label>
                 </span>
                 <span class="product-filter-property">
-                    <input type="checkbox" id="nike" name="brand" value="nike">
-                    <label for="nike">Nike</label>
+                    <input type="checkbox" id="buzos" name="clothing" value="buzos">
+                    <label for="buzos">Buzos</label>
                 </span>
                 <span class="product-filter-property">
-                    <input type="checkbox" id="puma" name="brand" value="puma">
-                    <label for="puma">Puma</label>
+                    <input type="checkbox" id="camperas" name="clothing" value="camperas">
+                    <label for="camperas">Camperas</label>
                 </span>
                 <span class="product-filter-property">
-                    <input type="checkbox" id="converse" name="brand" value="converse">
-                    <label for="converse">Converse</label>
+                    <input type="checkbox" id="jeans" name="clothing" value="jeans">
+                    <label for="jeans">Jeans</label>
                 </span>
                 <span class="product-filter-property">
-                    <input type="checkbox" id="levis" name="brand" value="levis">
-                    <label for="levis">Levis</label>
+                    <input type="checkbox" id="pantalones" name="clothing" value="pantalones">
+                    <label for="pantalones">Pantalones</label>
                 </span>
                 <span class="product-filter-property">
-                    <input type="checkbox" id="underarmor" name="brand" value="underarmor">
-                    <label for="underarmor">Under Armor</label>
+                    <input type="checkbox" id="zapatillas" name="clothing" value="zapatillas">
+                    <label for="zapatillas">Zapatillas</label>
                 </span>
-
             </div>
             <hr>
             <div class="product-filter-btn">
                 <span>Color:</span>
-                <span class="filter-btn-icon">
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                            <path fill="currentColor"
-                                d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
-                        </svg>
-                    </a>
+                <span class="filter-btn-icon" (click)="change('color')">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="color-down-btn"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="currentColor"
+                            d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" id="color-up-btn" style="display: none;"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+                    </svg>
+                </span>
+            </div>
+            <div class="product-filter-select-list" id="color">
+                <span class="product-filter-property">
+                    <input type="checkbox" id="red" name="color" value="red">
+                    <label for="red">Rojo</label>
+                </span>
+                <span class="product-filter-property">
+                    <input type="checkbox" id="blue" name="color" value="blue">
+                    <label for="blue">Azul</label>
+                </span>
+                <span class="product-filter-property">
+                    <input type="checkbox" id="green" name="color" value="green">
+                    <label for="green">Verde</label>
+                </span>
+                <span class="product-filter-property">
+                    <input type="checkbox" id="pink" name="color" value="pink">
+                    <label for="pink">Rosa</label>
+                </span>
+                <span class="product-filter-property">
+                    <input type="checkbox" id="yellow" name="color" value="yellow">
+                    <label for="yellow">Amarillo</label>
+                </span>
+                <span class="product-filter-property">
+                    <input type="checkbox" id="cyan" name="color" value="cyan">
+                    <label for="cyan">Cian</label>
+                </span>
+                <span class="product-filter-property">
+                    <input type="checkbox" id="white" name="color" value="white">
+                    <label for="white">Blanco</label>
+                </span>
+                <span class="product-filter-property">
+                    <input type="checkbox" id="black" name="color" value="black">
+                    <label for="black">Negro</label>
                 </span>
             </div>
             <hr>
             <div class="product-filter-btn">
                 <span>Talle:</span>
-                <span class="filter-btn-icon">
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                            <path fill="currentColor"
-                                d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
-                        </svg>
-                    </a>
+                <span class="filter-btn-icon" (click)="change('size')">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="size-down-btn"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="currentColor"
+                            d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" id="size-up-btn" style="display: none;"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+                    </svg>
                 </span>
             </div>
-            <hr>
-            <div class="product-filter-btn">
-                <span>Test:</span>
-                <span class="filter-btn-icon">
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                            <path fill="currentColor"
-                                d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
-                        </svg>
-                    </a>
+            <div class="product-filter-select-list" id="size">
+                <span class="product-filter-property">
+                    <input type="checkbox" id="small" name="size" value="small">
+                    <label for="small">S</label>
+                </span>
+                <span class="product-filter-property">
+                    <input type="checkbox" id="medium" name="size" value="medium">
+                    <label for="medium">M</label>
+                </span>
+                <span class="product-filter-property">
+                    <input type="checkbox" id="large" name="size" value="large">
+                    <label for="large">L</label>
+                </span>
+                <span class="product-filter-property">
+                    <input type="checkbox" id="extralarge" name="size" value="extralarge">
+                    <label for="extralarge">XL</label>
+                </span>
+                <span class="product-filter-property">
+                    <input type="checkbox" id="extralarge2" name="size" value="extralarge2">
+                    <label for="extralarge2">XXL</label>
                 </span>
             </div>
             <hr>
