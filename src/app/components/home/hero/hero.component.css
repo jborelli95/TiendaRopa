@@ -5,7 +5,7 @@
 }
 
 #hero-img {
-    background-image: url("../../../../assets/images/herotest2.png");
+    background-image: url("/assets/images/herotest2.png");
     height: 100%;
 
     /* Position and center the image to scale nicely on all screens */

@@ -1,0 +1,9 @@
+.garment-description{
+    display: flex;
+    flex-direction: column;
+}
+
+.garment-name{
+    color: black;
+    font-weight: 500;
+}

@@ -9,6 +9,8 @@ import { HeroComponent } from './components/home/hero/hero.component';
 import { ProductSectionComponent } from './components/products/product-section/product-section.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { ProductViewComponent } from './views/navegation/product-view/product-view.component';
+import { GarmentViewComponent } from './views/products/garment-view/garment-view.component';
+import { GarmentComponent } from './components/products/garment/garment.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ProductViewComponent } from './views/navegation/product-view/product-vi
     HeroComponent,
     ProductSectionComponent,
     FooterComponent,
-    ProductViewComponent
+    ProductViewComponent,
+    GarmentViewComponent,
+    GarmentComponent
   ],
   imports: [
     BrowserModule,
