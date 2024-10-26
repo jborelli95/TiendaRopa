@@ -1,3 +1,9 @@
+/*.garment-img{
+    width: 70%;
+    height: 20rem;
+    background-color: gray;
+}*/
+
 .garment-description{
     display: flex;
     flex-direction: column;
@@ -7,3 +13,29 @@
     color: black;
     font-weight: 500;
 }
+
+.payment svg{
+    margin-right: 1rem;
+}
+
+.payment svg:last-child{
+    margin-right: 0px;
+}
+
+/*
+.size-cell{
+    margin-right: 2rem;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.size-cell:first-child{
+    margin-left: 0px;
+}
+
+.size-cell:last-child{
+    margin-right: 0px;
+}
+*/
