@@ -6,20 +6,20 @@
                     <img src="/assets/images/testremera1.png" alt="Remra azul" width="100%">
                 </div>
                 <div class="col-6">
-                    <img src="/assets/images/testremera1.png" alt="Remra azul" width="100%">
+                    <img src="/assets/images/testremera2.png" alt="Remra azul" width="100%">
                 </div>
             </div>
             <div class="row">
-                <div class="col-6" style="background-color: gray;">
+                <div class="col-6">
                     <img src="/assets/images/testremera1.png" alt="Remra azul" width="100%">
                 </div>
-                <div class="col-6" style="background-color: rgb(221, 20, 20);">
-                    <img src="/assets/images/testremera1.png" alt="Remra azul" width="100%">
+                <div class="col-6">
+                    <img src="/assets/images/testremera2.png" alt="Remra azul" width="100%">
                 </div>
             </div>
         </div>
         <div class="col-3">
-            <h1 class="garment-name">Nombre del producto</h1>
+            <h1 class="garment-name mb-3">Nombre del producto</h1>
             <p class="fs-2 mb-0">$1000000.0</p>
             <p class="text-primary fs-4 mt-0">12x $ 83.333,33 sin interés</p>
             <span class="fs-3">Selecciona tu talle:</span>
@@ -121,40 +121,35 @@
                 </span>
             </div>
 
-            <div class="row ms-0">
+            <div class="row ms-0 mt-4">
                 <div class="col-3 p-0">
-                    <span class="border border-dark border-1 d-flex justify-content-between">
-                        <span
-                            class="p-2 border-end border-dark">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
-                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                    <div class="border border-dark border-1 d-flex justify-content-between">
+                        <span (click)="subtractQuant()" class="p-2 border-end border-dark sub-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="currentColor"
+                                class="bi bi-dash" viewBox="0 0 16 16">
+                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
                             </svg>
                         </span>
                         <span class="p-2 text-center fs-5">
-                            1
+                            {{shopQuantity}}
                         </span>
-                        <span
-                            class="p-2 border-start border-dark d-flex justify-content-center align-middle">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
-                              </svg>
+                        <span (click)="addQuant()"
+                            class="p-2 border-start border-dark d-flex justify-content-center align-middle add-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="currentColor"
+                                class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+                            </svg>
                         </span>
-                    </span>
+                    </div>
                 </div>
                 <div class="col-9 p-0">
-                    <a href="#" class="bg-dark text-white d-flex h-100 w-100 fs-5 text-decoration-none justify-content-center p-2">
+                    <a href="#"
+                        class="bg-dark text-white d-flex h-100 w-100 fs-5 text-decoration-none justify-content-center p-2">
                         Agregar al carrito
                     </a>
                 </div>
             </div>
-
-            <div class="ms-0 mt-5">
-                <a href="#" class="bg-dark text-white d-flex fs-5 text-decoration-none justify-content-center p-2">
-                    Agregar al carrito
-                </a>
-            </div>
-
-
         </div>
     </div>
 </section>

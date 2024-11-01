@@ -22,6 +22,10 @@
     margin-right: 0px;
 }
 
+.sub-btn, .add-btn:hover{
+    cursor: pointer;
+}
+
 /*
 .size-cell{
     margin-right: 2rem;

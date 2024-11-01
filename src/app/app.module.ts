@@ -11,6 +11,10 @@ import { FooterComponent } from './components/shared/footer/footer.component';
 import { ProductViewComponent } from './views/navegation/product-view/product-view.component';
 import { GarmentViewComponent } from './views/products/garment-view/garment-view.component';
 import { GarmentComponent } from './components/products/garment/garment.component';
+import { ContactViewComponent } from './views/navegation/contact-view/contact-view.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { AboutUsViewComponent } from './views/navegation/about-us-view/about-us-view.component';
+import { AboutUsComponent } from './components/tienda-ropa/about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { GarmentComponent } from './components/products/garment/garment.componen
     FooterComponent,
     ProductViewComponent,
     GarmentViewComponent,
-    GarmentComponent
+    GarmentComponent,
+    ContactViewComponent,
+    ContactComponent,
+    AboutUsViewComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
