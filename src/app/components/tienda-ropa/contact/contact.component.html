@@ -15,7 +15,7 @@
                         class="form-control fs-5" required />
 
                     <label for="menssage" class="form-label fs-4 mt-3">Mensaje:</label>
-                    <textarea id="message" class="form-control fs-5" placeholder="Aqui va el mensaje..."
+                    <textarea id="message" class="form-control fs-5" placeholder="Que nos queres contar?"
                         rows="5"></textarea>
 
                     <span class="d-flex justify-content-center mt-5">
@@ -84,5 +84,9 @@
             </div>
         </div>
     </div>
-
+    <div class="contaainer mt-5">
+        <label for="simpleText">Ingrese un texto</label>
+        <input type="text" id="simpleText" [(ngModel)]="text">
+        <button type="submit" (click)="test()">Ok</button>
+    </div>
 </section>

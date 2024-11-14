@@ -39,6 +39,11 @@ export class ProductSectionComponent {
     }
   }
 
+
+  test(){
+    alert("hola!")
+  }
+
 }
 
 /**https://stackoverflow.com/questions/65887254/how-to-change-a-value-in-css-using-typescript */

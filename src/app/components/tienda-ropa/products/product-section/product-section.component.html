@@ -1,5 +1,5 @@
 <section class="container-xxl mt-5">
-    <div class="row">
+    <div class="row gx-5">
         <div class="col-2 d-flex flex-column">
             <span class="fs-3">Filtros:</span>
             <div>
@@ -19,7 +19,7 @@
                         </svg>
                     </span>
                 </div>
-                <div class="d-flex flex-column fs-5 mt-1" id="genre-filter">
+                <div class="d-none flex-column fs-5 mt-1" id="genre-filter">
                     <!--Acá iria todos los input escondidos-->
                     <span>
                         <input type="checkbox" name="genre" id="men" value="men">
@@ -50,7 +50,7 @@
                         </svg>
                     </span>
                 </div>
-                <div class="d-flex flex-column fs-5 mt-1" id="clothing-filter">
+                <div class="d-none flex-column fs-5 mt-1" id="clothing-filter">
                     <!--Acá iria todos los input escondidos-->
                     <span>
                         <input type="checkbox" name="clothing" id="t-shirt" value="t-shirt">
@@ -105,7 +105,7 @@
                         </svg>
                     </span>
                 </div>
-                <div class="d-flex flex-column fs-5 mt-1" id="color-filter">
+                <div class="d-none flex-column fs-5 mt-1" id="color-filter">
                     <!--Acá iria todos los input escondidos-->
                     <span>
                         <input type="checkbox" id="red" name="color" value="red">
@@ -160,7 +160,7 @@
                         </svg>
                     </span>
                 </div>
-                <div class="d-flex flex-column fs-5 mt-1" id="size-filter">
+                <div class="d-none flex-column fs-5 mt-1" id="size-filter">
                     <!--Acá iria todos los input escondidos-->
                     <span>
                         <input type="checkbox" id="small" name="size" value="small">
@@ -191,21 +191,119 @@
             </span>
         </div>
         <div class="col-10">
-            <div class="row">
+            <div class="row row-cols-5 g-4">
                 <div class="col">
-                    <div class="card" style="width: 20rem;">
+                    <div class="card">
+
+                        <img src="/assets/images/testremera1.png" class="card-img-top" alt="Remera azul adidas" (click)="test()">
+
+                        <div class="card-body">
+                            <h5 class="card-title fs-4 fw-bold text-center">Camiseta adidas</h5>
+                            <p class="card-text text-secondary text-center">
+                                Una breve descripcion del producto. Ejemplo: Camiseta azul adidas talle L
+                            </p>
+                            <span class="d-flex justify-content-center fs-4 fw-bold">$1000000.00</span>
+                            <span class="d-flex justify-content-center fs-6">Compralo en cuotas sin interes</span>
+                            <a class="card-link d-flex justify-content-center mt-2 p-2 bg-primary text-light link-underline link-underline-opacity-0" href="#">AGREGAR AL CARRITO</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+
+                        <img src="/assets/images/testremera02.png" class="card-img-top" alt="Remera azul adidas">
+
+                        <div class="card-body">
+                            <h5 class="card-title fs-4 fw-bold text-center">Camiseta adidas</h5>
+                            <p class="card-text text-secondary text-center">
+                                Una breve descripcion del producto. Ejemplo: Camiseta azul adidas talle L
+                            </p>
+                            <span class="d-flex justify-content-center fs-4 fw-bold">$1000000.00</span>
+                            <span class="d-flex justify-content-center fs-6">Compralo en cuotas sin interes</span>
+                            <a class="card-link d-flex justify-content-center mt-2 p-2 bg-primary text-light link-underline link-underline-opacity-0" href="#">AGREGAR AL CARRITO</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
 
                         <img src="/assets/images/testremera1.png" class="card-img-top" alt="Remera azul adidas">
 
                         <div class="card-body">
-                            <span>Nombre de producto</span>
-                            <p class="card-text text-secondary">
-                                Una breve descripcion del producto
+                            <h5 class="card-title fs-4 fw-bold text-center">Camiseta adidas</h5>
+                            <p class="card-text text-secondary text-center">
+                                Una breve descripcion del producto. Ejemplo: Camiseta azul adidas talle L
                             </p>
+                            <span class="d-flex justify-content-center fs-4 fw-bold">$1000000.00</span>
+                            <span class="d-flex justify-content-center fs-6">Compralo en cuotas sin interes</span>
+                            <a class="card-link d-flex justify-content-center mt-2 p-2 bg-primary text-light link-underline link-underline-opacity-0" href="#">AGREGAR AL CARRITO</a>
                         </div>
                     </div>
                 </div>
+                <div class="col">
+                    <div class="card">
 
+                        <img src="/assets/images/testremera02.png" class="card-img-top" alt="Remera azul adidas">
+
+                        <div class="card-body">
+                            <h5 class="card-title fs-4 fw-bold text-center">Camiseta adidas</h5>
+                            <p class="card-text text-secondary text-center">
+                                Una breve descripcion del producto. Ejemplo: Camiseta azul adidas talle L
+                            </p>
+                            <span class="d-flex justify-content-center fs-4 fw-bold">$1000000.00</span>
+                            <span class="d-flex justify-content-center fs-6">Compralo en cuotas sin interes</span>
+                            <a class="card-link d-flex justify-content-center mt-2 p-2 bg-primary text-light link-underline link-underline-opacity-0" href="#">AGREGAR AL CARRITO</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+
+                        <img src="/assets/images/testremera1.png" class="card-img-top" alt="Remera azul adidas">
+
+                        <div class="card-body">
+                            <h5 class="card-title fs-4 fw-bold text-center">Camiseta adidas</h5>
+                            <p class="card-text text-secondary text-center">
+                                Una breve descripcion del producto. Ejemplo: Camiseta azul adidas talle L
+                            </p>
+                            <span class="d-flex justify-content-center fs-4 fw-bold">$1000000.00</span>
+                            <span class="d-flex justify-content-center fs-6">Compralo en cuotas sin interes</span>
+                            <a class="card-link d-flex justify-content-center mt-2 p-2 bg-primary text-light link-underline link-underline-opacity-0" href="#">AGREGAR AL CARRITO</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+
+                        <img src="/assets/images/testremera02.png" class="card-img-top" alt="Remera azul adidas">
+
+                        <div class="card-body">
+                            <h5 class="card-title fs-4 fw-bold text-center">Camiseta adidas</h5>
+                            <p class="card-text text-secondary text-center">
+                                Una breve descripcion del producto. Ejemplo: Camiseta azul adidas talle L
+                            </p>
+                            <span class="d-flex justify-content-center fs-4 fw-bold">$1000000.00</span>
+                            <span class="d-flex justify-content-center fs-6">Compralo en cuotas sin interes</span>
+                            <a class="card-link d-flex justify-content-center mt-2 p-2 bg-primary text-light link-underline link-underline-opacity-0" href="#">AGREGAR AL CARRITO</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+
+                        <img src="/assets/images/testremera1.png" class="card-img-top" alt="Remera azul adidas">
+
+                        <div class="card-body">
+                            <h5 class="card-title fs-4 fw-bold text-center">Camiseta adidas</h5>
+                            <p class="card-text text-secondary text-center">
+                                Una breve descripcion del producto. Ejemplo: Camiseta azul adidas talle L
+                            </p>
+                            <span class="d-flex justify-content-center fs-4 fw-bold">$1000000.00</span>
+                            <span class="d-flex justify-content-center fs-6">Compralo en cuotas sin interes</span>
+                            <a class="card-link d-flex justify-content-center mt-2 p-2 bg-primary text-light link-underline link-underline-opacity-0" href="#">AGREGAR AL CARRITO</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

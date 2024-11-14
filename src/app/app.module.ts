@@ -15,6 +15,7 @@ import { ContactViewComponent } from './views/navegation/contact-view/contact-vi
 import { ContactComponent } from './components/tienda-ropa/contact/contact.component';
 import { AboutUsViewComponent } from './views/navegation/about-us-view/about-us-view.component';
 import { AboutUsComponent } from './components/tienda-ropa/about-us/about-us.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,9 @@ import { AboutUsComponent } from './components/tienda-ropa/about-us/about-us.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()
