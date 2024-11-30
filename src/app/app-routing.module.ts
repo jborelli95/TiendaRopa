@@ -5,6 +5,8 @@ import { ProductViewComponent } from './views/navegation/product-view/product-vi
 import { GarmentViewComponent } from './views/products/garment-view/garment-view.component';
 import { ContactViewComponent } from './views/navegation/contact-view/contact-view.component';
 import { AboutUsViewComponent } from './views/navegation/about-us-view/about-us-view.component';
+import { UserLoginViewComponent } from './views/navegation/users/user-login-view/user-login-view.component';
+import { UserRegisterViewComponent } from './views/navegation/users/user-register-view/user-register-view.component';
 
 const routes: Routes = [
   {
@@ -26,6 +28,14 @@ const routes: Routes = [
   {
     path:"contact",
     component:ContactViewComponent
+  },
+  {
+    path:"user-register",
+    component:UserRegisterViewComponent
+  },
+  {
+    path:"user-login",
+    component:UserLoginViewComponent
   },
   {
     path: "**",

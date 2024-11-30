@@ -16,6 +16,12 @@ import { ContactComponent } from './components/tienda-ropa/contact/contact.compo
 import { AboutUsViewComponent } from './views/navegation/about-us-view/about-us-view.component';
 import { AboutUsComponent } from './components/tienda-ropa/about-us/about-us.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UserLoginComponent } from './components/tienda-ropa/users/user-login/user-login.component';
+import { UserLoginViewComponent } from './views/navegation/users/user-login-view/user-login-view.component';
+import { UserRegisterComponent } from './components/tienda-ropa/users/user-register/user-register.component';
+import { UserRegisterViewComponent } from './views/navegation/users/user-register-view/user-register-view.component';
+import { DatePipe } from '@angular/common';
+import { provideHttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,15 +37,21 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ContactViewComponent,
     ContactComponent,
     AboutUsViewComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    UserLoginComponent,
+    UserLoginViewComponent,
+    UserRegisterComponent,
+    UserRegisterViewComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
+    DatePipe,
+    provideHttpClient(),
     provideClientHydration()
   ],
   bootstrap: [AppComponent]

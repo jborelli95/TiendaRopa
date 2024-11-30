@@ -1,7 +1,14 @@
 export interface User{
-    id:number,
+    id:string,
     username:string,
-    password:string
+    password:string,
+    name:string,
+    surname:string,
+    email:string,
+    city:string,
+    state:string,
+    country:string,
+    startedDate:string|null
 }
 
 export interface Garment{

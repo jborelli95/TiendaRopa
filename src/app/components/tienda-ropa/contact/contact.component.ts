@@ -15,11 +15,12 @@ export class ContactComponent {
     private passwordService: PasswordService
   ) { }
 
+  /*
   test() {
     alert(this.text);
     let encryptData = this.passwordService.encryptData(this.text, environment.cryptKey);
     console.log("Data encriptada: "+ encryptData);
     let decryptData = this.passwordService.decryptData(encryptData, environment.cryptKey);
     console.log("Data desencriptada: "+ decryptData);
-  }
+  }*/
 }

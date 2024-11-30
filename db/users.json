@@ -1,7 +1,16 @@
 {
-    "users" : [
+    "users": [
         {
-            
+            "id": "",
+            "username": "",
+            "password": "",
+            "firstName": "",
+            "lastName": "",
+            "email": "",
+            "city": "",
+            "state": "",
+            "country": "",
+            "startedDate": ""
         }
     ]
 }
